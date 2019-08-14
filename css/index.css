@@ -129,8 +129,140 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 960px;
+  font-size: 62.5;
 }
 html,
 body {
   height: 100%;
+  margin: 1%;
+}
+@media screen and (max-width: 500px) {
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  height: 4vh;
+}
+header a {
+  color: brown;
+  margin-left: 46px;
+  font-size: 1.2rem;
+}
+.secOne {
+  background-color: #ffd1a2;
+  padding: 21px;
+}
+@media screen and (max-width: 500px) {
+  .secOne {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+.secOne img {
+  width: 25%;
+  padding: 0 0 18px 0;
+}
+.secOne h1 {
+  font-size: 3rem;
+}
+.secOne h2 {
+  padding: 7px 0 24px 0;
+  font-size: 1.7rem;
+}
+.secOne p {
+  font-family: 'Amatic SC', cursive;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin-top: 39px;
+}
+.secOne button {
+  border: 2px solid black;
+  padding: 13px 7px;
+  font-size: 1.1rem;
+  margin-top: 27px;
+}
+.secTwo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 28px;
+}
+@media screen and (max-width: 500px) {
+  .secTwo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+.secTwo div {
+  width: 49%;
+}
+.secTwo h3 {
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+}
+.secTwo p {
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  padding-top: 11px;
+}
+.secTwo a {
+  border: 1px solid gray;
+  font-size: 1.6rem;
+  font-family: 'Amatic SC', cursive;
+  letter-spacing: 1px;
+  padding: 8px;
+}
+.secTwo #list {
+  display: flex;
+  flex-direction: column;
+}
+.secThree {
+  padding-top: 20px;
+}
+@media screen and (max-width: 500px) {
+  .secThree {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+.secThree h2 {
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+}
+.secThree #topRow th {
+  font-weight: bold;
+}
+.secThree table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.secThree .colorIn {
+  background-color: #e7a1a1;
+}
+.secThree th {
+  border: 2px dotted #493308;
+  text-align: left;
+  padding: 8px;
+}
+.secThree td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+.secThree table {
+  font-family: arial, sans-serif;
+  width: 100%;
 }
