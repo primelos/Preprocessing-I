@@ -148,12 +148,13 @@ body {
   header nav {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 }
 header nav {
   display: flex;
   justify-content: flex-end;
-  height: 4vh;
+  padding: 15px 0 15px 0;
 }
 header a {
   color: brown;
@@ -169,6 +170,17 @@ header a {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    background-image: url("../images/bridge.jpg");
+    background-size: cover;
+  }
+  .secOne img {
+    display: none;
+  }
+  .secOne div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
   }
 }
 .secOne img {
@@ -205,6 +217,8 @@ header a {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    align-items: center;
+    background-color: #bacfd0;
   }
 }
 .secTwo div {

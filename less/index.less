@@ -58,6 +58,7 @@ table {
 	background-color: #e7a1a1;
 }
 
+@mobileColor:white;
 
 * {
 	box-sizing: border-box;
@@ -82,12 +83,14 @@ header{
 		nav{
 			display: flex;
 			flex-direction: column;
+			align-items: center;
 		}
 	}
 	nav{
 		display: flex;
 		justify-content: flex-end;
-		height: 4vh;
+		padding: 15px 0 15px 0;
+		// height: 4vh;
 	}
 	a{
 		color: brown;
@@ -106,6 +109,17 @@ header{
 		display:flex;
 		flex-wrap: wrap;	
 		flex-direction: column;
+		background-image: url("../images/bridge.jpg");
+		background-size: cover;
+		img{
+			display:none;
+		}
+		div{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			color: @mobileColor;
+		}
 	}
 	img{
 		width: 25%;
@@ -142,6 +156,8 @@ header{
 		display:flex;
 		flex-wrap: wrap;	
 		flex-direction: column;
+		align-items: center;
+		background-color: #bacfd0;
 	}
 	div{
 		// border:1px solid black;
