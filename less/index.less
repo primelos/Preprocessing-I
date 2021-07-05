@@ -49,11 +49,186 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+@fType:'Amatic SC', cursive;
+
+.border(){
+	border:2px dotted #493308;	
+}
+.bGround(){
+	background-color: #e7a1a1;
+}
+
+@mobileColor:white;
+
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin:0 auto;
+	max-width:964px;
+	font-size: 62.5;
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	margin: 0 auto;
 }
+
+header{
+	
+	@media screen and ( max-width: 500px ) {
+		display:flex;
+		flex-wrap: wrap;	
+		flex-direction: column;
+		
+		nav{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+	nav{
+		display: flex;
+		justify-content: flex-end;
+		padding: 15px 0 15px 0;
+		// height: 4vh;
+	}
+	a{
+		color: brown;
+		margin-left: 46px;
+		font-size: 1.2rem;
+
+
+	}
+
+}
+.secOne{
+	background-color: #ffd1a2;
+	padding:21px;
+
+	@media screen and ( max-width: 500px ) {
+		display:flex;
+		flex-wrap: wrap;	
+		flex-direction: column;
+		background-image: url("../images/bridge.jpg");
+		background-size: cover;
+		img{
+			display:none;
+		}
+		div{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			color: @mobileColor;
+		}
+	}
+	img{
+		width: 25%;
+		padding: 0 0 18px 0;
+	}
+	h1{
+		font-size: 3rem
+	}
+	h2{
+		padding: 7px 0 24px 0;
+		font-size: 1.7rem;
+	}
+	p{
+		font-family: @fType;
+		font-size: 2rem;
+		letter-spacing: 1px;
+		margin-top: 39px;
+	}
+	button{
+		border: 2px solid black;
+		padding: 13px 7px;
+		font-size: 1.1rem;
+		margin-top: 27px;
+	}
+}
+
+.secTwo{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin-top: 28px;
+
+	@media screen and ( max-width: 500px ) {
+		display:flex;
+		flex-wrap: wrap;	
+		flex-direction: column;
+		align-items: center;
+		background-color: #bacfd0;
+	}
+	div{
+		// border:1px solid black;
+		width: 49%;
+	}
+	
+	h3{
+		font-size: 1.7rem;
+		letter-spacing: 1px;
+	}
+	p{
+		font-family: @fType;
+		font-size: 1.6rem;
+		letter-spacing: 1px;
+		padding-top: 11px;
+	}
+	a{
+	border: 1px solid gray;
+	font-size: 1.6rem;
+	font-family: @fType;
+	letter-spacing: 1px;
+	padding: 8px;
+	}
+	#list{
+		display:flex;
+		flex-direction: column
+		
+
+	}
+}
+	.secThree{
+		padding-top:20px;
+		
+		@media screen and ( max-width: 500px ) {
+			display:flex;
+			flex-wrap: wrap;	
+			flex-direction: column;
+		}
+		h2{
+			font-size: 1.7rem;
+			letter-spacing: 1px;
+		}
+		#topRow{
+			th{
+				font-weight: bold;
+			}
+		}
+		table {
+			font-family: arial, sans-serif;
+  			border-collapse: collapse;
+  			width: 100%;
+			}
+		
+		.colorIn{
+			.bGround();
+		}
+
+		th{
+			.border();
+  			text-align: left;
+  			padding: 8px;
+		}
+		td{
+			border: 1px solid #dddddd;
+			text-align: left;
+			padding: 8px;
+		}
+		table {
+			font-family: arial, sans-serif;
+			// border-collapse: collapse;
+			width: 100%;
+		  }
+	}
 
